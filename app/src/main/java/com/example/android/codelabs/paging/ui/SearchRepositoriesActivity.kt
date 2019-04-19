@@ -32,7 +32,7 @@ import android.widget.Toast
 import com.example.android.codelabs.paging.R
 import com.example.android.codelabs.paging.Injection
 import com.example.android.codelabs.paging.model.Repo
-import kotlinx.android.synthetic.main.activity_search_repositories.*
+import kotlinx.android.synthetic.main.activity_search_repositories_local_network.*
 
 
 class SearchRepositoriesActivity : AppCompatActivity() {
@@ -42,7 +42,7 @@ class SearchRepositoriesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_search_repositories)
+        setContentView(R.layout.activity_search_repositories_local_network)
 
         // get the view model
         viewModel = ViewModelProviders.of(this, Injection.provideViewModelFactory(this))
